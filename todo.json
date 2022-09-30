@@ -1,0 +1,17 @@
+import json
+with open("C:\\Users\\venne\\Documents\\todos.json","r") as j:
+    Todolist='{"task1":"walking","task2":"breakfast"}'
+    add_todo={"task3":"eating"}
+    json.loads(j.read())
+    data=json.loads(Todolist)
+    print(data)
+    add_todo={"task3":"go to college","task4":"study"}
+import sys;
+args=sys.argv
+command = args[1]
+def addTodo(task):
+    data.update(add_todo)
+    print(data)
+    print("task has been added")
+if command=="add":
+    addTodo(args[2])
